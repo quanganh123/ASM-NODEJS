@@ -1,0 +1,80 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0; }
+
+.a {
+  background-color: black;
+  display: flex;
+  color: #aeacac;
+  justify-content: space-around;
+  padding: 12px 0;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.title {
+  margin-right: 200px; }
+
+.title2 a {
+  color: #aeacac;
+  padding: 0 20px;
+  border-left: 1px solid #aeacac; }
+
+.usd {
+  border-right: 1px solid #aeacac; }
+
+.title2 a:hover {
+  color: #6e95e5; }
+
+header {
+  position: sticky;
+  top: 1px; }
+
+header.sticky {
+  background-color: white; }
+
+.header {
+  position: absolute;
+  display: flex;
+  padding: 30px 50px; }
+
+.header .logo {
+  margin-left: 130px; }
+
+.header .menu {
+  margin-left: 50px; }
+
+.header .menu a {
+  padding-left: 20px;
+  color: black; }
+
+.header .menu .home {
+  color: #6e95e5; }
+
+.header .menu a:hover {
+  color: #6e95e5; }
+
+.header .btn {
+  margin-left: 470px; }
+
+.header .btn .seach {
+  font-size: 20px; }
+
+.header .btn .cart {
+  margin-left: 30px;
+  font-size: 20px; }
+
+.header .btn .love {
+  margin-left: 30px;
+  font-size: 20px; }
+
+.header .btn a:hover {
+  color: #6e95e5;
+  cursor: pointer; }
+
+button {
+  opacity: inherit; }
+
+.slide {
+  background-size: 100%; }

@@ -1,0 +1,80 @@
+@import 'base';
+.a{
+    background-color: $black-color;
+    display: flex;
+    color: $grey-color;
+    justify-content: space-around;
+    padding: 12px 0;
+    font-size: 13px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.title{
+    margin-right: 200px;
+}
+
+.title2 a{
+    color: $grey-color;
+    padding: 0 20px;
+    border-left: 1px solid $grey-color;
+}
+.usd{
+    border-right: 1px solid $grey-color;
+}
+.title2 a:hover{
+    color: $blue-color;
+}
+header{
+    position: sticky;
+    top: 1px;
+}
+header.sticky{
+    background-color:white;
+}
+.header{ 
+    position: absolute;
+    display: flex;
+    padding: 30px 50px;
+}
+.header .logo{
+    margin-left: 130px;
+
+}
+.header .menu{
+    margin-left: 50px;
+}
+.header .menu a{
+    padding-left: 20px;
+    color: $black-color;
+}
+.header .menu .home{
+    color: $blue-color;
+}
+.header .menu a:hover{
+    color: $blue-color;
+}
+.header .btn{
+    margin-left: 470px;
+}
+.header .btn .seach{
+    font-size: 20px;
+}
+.header .btn .cart{
+    margin-left: 30px;
+    font-size: 20px;
+}
+.header .btn .love{
+    margin-left: 30px;
+    font-size: 20px;
+}
+.header .btn a:hover{
+    color: $blue-color;
+    cursor: pointer;
+}
+button{
+    opacity: inherit;
+}
+.slide{
+    
+    background-size: 100%;
+}
