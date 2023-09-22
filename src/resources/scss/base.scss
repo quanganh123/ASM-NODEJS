@@ -5,10 +5,70 @@ $white-color: white;
 $grey-color: rgb(174, 172, 172);
 $blue-color: rgb(110, 149, 229);
 
-
 * {
     list-style: none;
     text-decoration: none;
     padding: 0;
     margin: 0;
+}
+
+html {
+    animation: html 1s 0.1s;
+}
+
+@keyframes html {
+    100% {
+        opacity: 1;
+    }70% {
+        opacity: 0.7;
+    }50% {
+        opacity: 0.5;
+    }30% {
+        opacity: 0.3;
+    }0% {
+        opacity: 0;
+    }
+}
+
+@keyframes h3 {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes h1 {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes button {
+    from {
+        transform: translatex(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translatex(0);
+        opacity: 1;
+    }
+}
+@keyframes asmbtn {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 0.1;
+    }
 }

@@ -4,6 +4,51 @@
   padding: 0;
   margin: 0; }
 
+html {
+  animation: html 1s 0.1s; }
+
+@keyframes html {
+  100% {
+    opacity: 1; }
+  70% {
+    opacity: 0.7; }
+  50% {
+    opacity: 0.5; }
+  30% {
+    opacity: 0.3; }
+  0% {
+    opacity: 0; } }
+
+@keyframes h3 {
+  from {
+    transform: translateY(-100px);
+    opacity: 0; }
+  to {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes h1 {
+  from {
+    transform: translateY(100px);
+    opacity: 0; }
+  to {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes button {
+  from {
+    transform: translatex(100px);
+    opacity: 0; }
+  to {
+    transform: translatex(0);
+    opacity: 1; } }
+
+@keyframes asmbtn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 0.1; } }
+
 .a {
   background-color: black;
   display: flex;
@@ -29,15 +74,15 @@
 
 header {
   position: sticky;
-  top: 1px; }
-
-header.sticky {
-  background-color: white; }
+  top: 1px;
+  z-index: 1; }
 
 .header {
   position: absolute;
   display: flex;
-  padding: 30px 50px; }
+  padding: 30px 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%; }
 
 .header .logo {
   margin-left: 130px; }
@@ -76,5 +121,202 @@ header.sticky {
 button {
   opacity: inherit; }
 
-.slide {
-  background-size: 100%; }
+img.slide {
+  width: 100%; }
+
+img.slide:not(:first-child) {
+  display: none; }
+
+.btn-change {
+  font-size: 80px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  color: #908f8f;
+  cursor: pointer; }
+
+#next {
+  right: 50px; }
+
+#prev {
+  left: 50px; }
+
+.change-img {
+  text-align: center;
+  margin-top: 1rem; }
+
+.title-img {
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 200px;
+  font-size: 30px; }
+
+.h3 {
+  animation: h3 1.5s; }
+
+.h1 {
+  padding: 20px 0;
+  animation: h3 1.5s 0.1s;
+  font-family: 'Times New Roman', Times, serif; }
+
+.button button {
+  border: none;
+  border-radius: 18px;
+  padding: 10px 30px;
+  background-color: #6e95e5;
+  color: white;
+  font-size: 15px;
+  animation: button 1.5s 0.2s;
+  cursor: pointer; }
+
+.button button:hover {
+  background-color: black; }
+
+.category {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  cursor: pointer; }
+
+.women {
+  margin-right: 30px; }
+
+.women:hover {
+  animation: h3 1s; }
+
+.women .title-women {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  padding: 30px; }
+
+.women .title-women span {
+  padding-bottom: 10px;
+  font-size: 20px; }
+
+.women img {
+  width: 369px;
+  height: 251px;
+  border: 1px solid #aeacac; }
+
+.men:hover {
+  animation: h3 1s; }
+
+.men .title-man {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  padding: 30px; }
+
+.men .title-man span {
+  padding-bottom: 10px;
+  font-size: 20px; }
+
+.men img {
+  width: 369px;
+  height: 251px;
+  border: 1px solid #aeacac; }
+
+.accessories {
+  margin-left: 30px; }
+
+.accessories:hover {
+  animation: h3 1s; }
+
+.accessories .title-acce {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  padding: 30px; }
+
+.accessories .title-acce span {
+  padding-bottom: 10px;
+  font-size: 20px; }
+
+.accessories img {
+  width: 369px;
+  height: 251px;
+  border: 1px solid #aeacac; }
+
+footer {
+  background-color: #222;
+  color: #fff; }
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 70px; }
+
+.categories {
+  display: flex;
+  flex-direction: column; }
+
+.categories span {
+  padding: 10px; }
+
+.categories span h3 {
+  padding: 5px; }
+
+.help {
+  display: flex;
+  flex-direction: column; }
+
+.help span {
+  padding: 10px; }
+
+.help span h3 {
+  padding: 5px; }
+
+.getintouch {
+  display: flex;
+  flex-direction: column; }
+
+.getintouch span {
+  padding: 10px; }
+
+.getintouch span h3 {
+  padding: 5px; }
+
+.getintouch .icon {
+  padding: 10px; }
+
+.newsletter {
+  display: flex;
+  flex-direction: column; }
+
+.newsletter span {
+  padding: 10px 10px 18px 0; }
+
+.newsletter input {
+  border: none;
+  border-bottom: white;
+  background-color: transparent;
+  padding: 10px 100px 10px 1px;
+  display: flex; }
+
+.newsletter button {
+  border: none;
+  border-radius: 23px;
+  padding: 15px 10px;
+  margin-top: 10px;
+  background-color: #6e95e5;
+  color: white;
+  cursor: pointer; }
+
+.newsletter button:hover {
+  color: #6e95e5;
+  background-color: white; }
+
+.bank-title-end {
+  display: flex;
+  justify-content: center; }
+
+.bank {
+  display: flex;
+  justify-content: center;
+  padding: 20px; }
+
+.title-end {
+  padding-bottom: 50px; }
